@@ -18,6 +18,7 @@ public class WelcomeController {
 
     private List<String> tasks = Arrays.asList("a", "b", "c", "d", "e", "f", "g");
 
+
     @GetMapping("/")
     public String main(Model model) {
         model.addAttribute("message", message);
@@ -26,7 +27,6 @@ public class WelcomeController {
         return "welcome"; //view
     }
 
-    // /hello?name=kotlin
     @GetMapping("/hello")
     public String mainWithParam(
             @RequestParam(name = "name", required = false, defaultValue = "")
@@ -36,4 +36,5 @@ public class WelcomeController {
 
         return "welcome"; //view
     }
+
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Processing Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h2>프로필 등록</h2>
+    <form id="myForm" method="post" action="/profile" enctype="multipart/form-data">
+        <table class="profile">
+            <tr>
+                <td>이름</td>
+                <td><input type="text" id="username" name="username"/></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><input type="text" id="sex" name="sex"/></td>
+            </tr>
+            <tr>
+                <td>홈페이지 주소</td>
+                <td><input type="text" id="homepage" name="homepage"/></td>
+            </tr>
+        </table>
+        <input type="submit" id="submit" value="저장" cass="submitForm">
+    </form>
+</div>
+</body>
+
+</html>
+
+
